@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+    <style>
+        table {
+            border: none;
+            background-color: white
+        }
+
+        tr {
+            border: none;
+        }
+
+        td {
+            border: none;
+        }
+
+        td {
+            width: 100px;
+            height: 10px;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        tr:first-child td:first-child {
+            background-color: rgb(120, 135, 171)
+        }
+
+        tr:first-child td:nth-child(2) {
+            background-color: rgb(79, 98, 142)
+        }
+
+        tr:first-child td:nth-child(3) {
+            background-color: rgb(46, 65, 114)
+        }
+
+        tr:first-child td:nth-child(4) {
+            background-color: rgb(22, 41, 85)
+        }
+
+        tr:first-child td:nth-child(5) {
+            background-color: rgb(6, 21, 57)
+        }
+
+
+        table tr:first-child {
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        table td:first-child {
+            vertical-align: center;
+            align-content: center;
+            width: max-content;
+        }
+
+        tr:not(:first-child):nth-child(even) td:nth-child(even) {
+            background-color: rgb(219, 219, 219);
+        }
+
+        tr:not(:first-child):nth-child(even) td:nth-child(odd) {
+            background-color: rgb(231, 231, 231);
+        }
+
+        tr:not(:first-child):nth-child(odd) td:nth-child(even) {
+            background-color: rgb(236, 236, 236);
+        }
+
+        tr:not(:first-child):nth-child(odd) td:nth-child(odd) {
+            background-color: rgb(243, 243, 243);
+        }
+
+
+    </style>
+</head>
+<body>
+
+<table cellspacing="0" border="1">
+    <tr>
+        <td>Choose your plan</td>
+        <td>
+            <div>starter</div>
+            <div><br></div>
+            <div><br></div>
+            <div class="price">10$</div>
+            <div>per month</div>
+        <td>
+
+            <div>econom</div>
+            <div><br></div>
+            <div><br></div>
+            <div class="price">30$</div>
+            <div>per month</div>
+
+        </td>
+        <td>
+            <div>standart</div>
+            <div><br></div>
+            <div><br></div>
+            <div class="price">59$</div>
+            <div>per month</div>
+        </td>
+        <td>
+            <div>professional</div>
+            <div><br></div>
+            <div><br></div>
+            <div class="price">99$</div>
+            <div>per month</div>
+        </td>
+
+
+    </tr>
+    <tr>
+        <td>Amount of space</td>
+        <td>20 GB</td>
+        <td>40 GB</td>
+        <td>110 GB</td>
+        <td>Unlimited</td>
+
+    </tr>
+    <tr>
+        <td>Bandswith per month</td>
+        <td>120GB</td>
+        <td>240GB</td>
+        <td>610GB</td>
+        <td>1300GB</td>
+    </tr>
+    <tr>
+        <td>Email accounts</td>
+        <td>1</td>
+        <td>15</td>
+        <td>60</td>
+        <td>Unlimited</td>
+    </tr>
+    <tr>
+        <td>MySQL databases</td>
+        <td>1</td>
+        <td>15</td>
+        <td>60</td>
+        <td>Unlimited</td>
+    </tr>
+    <tr>
+        <td>25h support</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Support tickets per month</td>
+        <td>2</td>
+        <td>6</td>
+        <td>14</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button>START</button>
+        </td>
+        <td>
+            <button>START</button>
+        </td>
+        <td>
+            <button>START</button>
+        </td>
+        <td>
+            <button>START</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

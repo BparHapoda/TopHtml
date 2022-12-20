@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <style>
+        .maket {background-color: rgb(42,79,110);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        box-sizing: border-box;
+
+
+        }
+
+        .section{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: small;}
+        .section.images{
+          display: flex;
+            flex-direction: row;
+        }
+        .img{
+
+            margin: 20px;
+            width: 32px;
+            height: 32px;
+            background-position:center;
+            background-size: cover;
+        }
+        .img.img1 {background-image: url("icons/fb_gray.png");
+        background-position:center; }
+        .img.img2 {background-image: url("icons/insta_gray.png");;}
+        .img.img3 {background-image: url("icons/youtube_gray.png");}
+
+        .img.img1:hover {background-image: url("icons/fb.png");}
+        .img.img2:hover {background-image: url("icons/insta.png");}
+        .img.img3:hover {background-image: url("icons/youtube.png");}
+
+        .blockAll{box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+
+            width: 800px;
+            flex-wrap: wrap;
+        }
+        .line{box-sizing: border-box;
+
+            width: 100%;
+            background-color: rgb(42,79,110);
+        padding-left: 30px;
+        padding-right: 30px;}
+        .footer{box-sizing: border-box;
+height: 40px;
+            width: 100%;
+            background-color: rgb(42,79,110);
+        text-align: center;
+        color: white;
+            font-size: x-small;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div class="blockAll">
+<div class="maket">
+    <div class="section">
+        <div>Home</div>
+        <div>About</div>
+        <div>Gallery</div>
+        <div>News</div>
+
+    </div>
+    <div class="section">
+        <div>Blog</div>
+        <div>FAQ</div>
+        <div>Privacy & cookies</div>
+
+    </div>
+    <div class="section images">
+        <div class="img img1"> </div>
+        <div class="img img2"> </div>
+        <div class="img img3"> </div>
+    </div>
+</div>
+
+<div class="line">
+    <hr></div>
+<div class="footer">
+Copyright Company &#169; 2018-2019</div>
+
+</div>
+</body>
+</html>

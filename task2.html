@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+
+    <style>
+        .text {
+            font-size: larger
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        ul {
+            list-style: none;
+            display: block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul:after {
+            display: block;
+            float: none;
+            content: ' ';
+            clear: both;
+        }
+
+        ul.mmenuu > li {
+
+            float: left;
+            position: relative;
+        }
+
+        ul.mmenuu > li > a {
+
+            display: block;
+
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+
+            background-color: rgb(76, 153, 107);
+        }
+
+        ul.mmenuu > li > a:hover {
+
+            background-color: rgb(63, 128, 89);
+        }
+
+        ul.ssubmenuu {
+            position: absolute;
+            width: 240px;
+            top: 37px;
+            left: 0px;
+            display: none;
+
+        }
+
+        ul.subsubmenuu {
+            position: absolute;
+            width: 240px;
+            top: 37px;
+            left: 240px;
+            display: none;
+
+        }
+
+        ul.ssubmenuu > li {
+
+            display: block;
+        }
+
+        ul.ssubmenuu > li > a {
+
+            display: block;
+
+            text-decoration: none;
+
+            padding: 10px;
+
+            color: #ffffff;
+
+            background-color: rgb(63, 128, 89);
+        }
+
+        ul.ssubmenuu > li > a:hover {
+
+            background-color: rgb(76, 153, 107);
+
+        }
+
+        ul.mmenuu > li:hover > ul.ssubmenuu {
+
+            display: block;
+        }
+
+        ul.mmenuu > li:hover > ul.ssubmenuu > li:hover > ul.subsubmenuu {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(76, 153, 107);
+        }
+
+        ul.mmenuu > li:hover > ul.ssubmenuu > li:hover > ul.subsubmenuu > li > a:hover {
+            display: block;
+
+            text-decoration: none;
+
+            padding: 10px;
+
+            color: #ffffff;
+
+            background-color: rgb(63, 128, 89);
+        }
+
+        ul.mmenuu > li > ul.ssubmenuu > li > ul.subsubmenuu > li {
+            display: block;
+            float: none;
+            position: relative;
+        }
+
+        ul.mmenuu > li > ul.ssubmenuu > li > ul.subsubmenuu > li > a {
+
+            display: block;
+
+            text-decoration: none;
+
+            padding: 10px;
+
+            color: #ffffff;
+
+            background-color: rgb(76, 153, 107);
+        }
+    </style>
+
+
+</head>
+<body>
+<ul class="mmenuu">
+    <li><a href=#>Home</a>
+
+    </li>
+    <li><a href=#>Categories</a>
+        <ul class="ssubmenuu">
+            <li><a href=#>Man</a></li>
+            <li><a href=#>Women</a>
+                <ul class="subsubmenuu">
+                    <li><a href=#>Dress</a></li>
+                    <li><a href=#>Pants</a></li>
+                    <li><a href=#>Shoes</a></li>
+                </ul>
+            </li>
+            <li><a href=#>Kids</a></li>
+        </ul>
+    </li>
+    <li><a href=#>About</a>
+
+    </li>
+    <li><a href=#>Contacts</a>
+
+    </li>
+</ul>
+<pre class="text">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+    a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+    of Lorem Ipsum.
+</pre>
+</body>
+</html>
