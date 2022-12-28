@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .circle {
+            border: 20px solid red;
+            background-image: url("icons_hw/1.jpg");
+            background-size: cover;
+            border-radius: 50% 50%;
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 200px;
+            top: 50px;
+            box-shadow: inset 5px 5px 20px black;
+        }
+
+        .minute {
+            position: absolute;
+            left: calc(50% - 5px);
+            border: 1px solid black;
+            background-color: green;
+            width: 10px;
+            height: 50%;
+            border-radius: 5px;
+            animation: rot 10s linear infinite;
+            transform-origin: bottom;
+
+        }
+
+        .hour {
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            border: 1px solid black;
+            background-color: green;
+            width: 10px;
+            height: 25%;
+            border-radius: 5px;
+            animation: rot 72s linear infinite;
+            transform-origin: top;
+        }
+
+        @keyframes rot {
+            0% {
+                transform: rotate(-180deg)
+            }
+            100% {
+                transform: rotate(180deg)
+            }
+        }
+
+        .littlecircle {
+            position: absolute;
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            left: calc(50% - 10px);
+            top: calc(50% - 10px);
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+<div class="circle">
+    <div class="hour"></div>
+    <div class="minute"></div>
+    <div class="littlecircle"></div>
+</div>
+    <div><h1>HAPPY NEW YEAR</h1></div>
+
+</div>
+
+
+</body>
+</html>

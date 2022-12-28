@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task42</title>
+
+
+    <style>
+        @media screen and (min-width: 800px) {
+            .page {
+                max-width: 800px;
+                min-width: 800px;
+                display: flex;
+                flex-direction: row;
+                padding: 20px;
+                flex-wrap: wrap;
+
+                background-color: rgb(245, 245, 245);
+            }
+
+            .text.text1 {
+                order: 1
+            }
+
+            .text.text2 {
+                order: 3
+            }
+
+            .imagebox.box1 {
+                order: 2
+            }
+
+            .imagebox.box2 {
+                order: 4
+            }
+
+            .text {
+                max-width: 68%;
+                min-width: 68%;
+
+                margin: 10px;
+                font-size: small;
+                font-family: "Bookman Old Style";
+                line-height: 20px;
+                padding: 15px;
+
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 799px) {
+            .page {
+                max-width: 799px;
+                min-width: 799px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                padding: 20px;
+                background-color: rgb(245, 245, 245);
+            }
+
+            .text.text1 {
+                order: 1;
+            }
+
+            .text.text2 {
+                order: 4
+            }
+
+            .imagebox.box1 {
+                order: 2;
+                margin-right: 30px;
+
+            }
+
+            .imagebox.box2 {
+                order: 3;
+                margin-left: 30px;
+            }
+
+            .text {
+                max-width: 68%;
+                min-width: 68%;
+
+                margin: 10px;
+                font-size: small;
+                font-family: "Bookman Old Style";
+                line-height: 20px;
+                padding: 15px;
+
+            }
+
+        }
+
+        @media screen and (max-width: 599px) {
+            .page {
+                max-width: 100%;
+                min-width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                padding: 20px;
+                background-color: rgb(245, 245, 245);
+            }
+
+            .text {
+                max-width: 98%;
+                min-width: 90%;
+                margin: 5px;
+                font-size: small;
+                font-family: "Bookman Old Style";
+                line-height: 20px;
+                padding: 5px;
+
+            }
+
+            .text.text1 {
+                order: 1;
+            }
+
+            .text.text2 {
+                order: 4;
+
+            }
+
+            .imagebox.box1 {
+                order: 2;
+                min-width: 90%;
+                max-width: 95%;
+                height: 200px;
+            }
+
+            .imagebox.box2 {
+                order: 3;
+                min-width: 90%;
+                max-width: 95%;
+                height: 200px;
+            }
+
+
+        }
+
+
+        .imagebox {
+            min-width: 24%;
+            max-width: 24%;
+            margin-top: 15px;
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+
+
+        }
+
+        .image {
+            min-width: 200px;
+            min-height: 200px;
+
+            border-radius: 15px 15px 0px 0px;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .image.image1 {
+            background-image: url("icons_hw/cat1.jpg");
+        }
+
+        .image.image2 {
+            background-image: url("icons_hw/cat2.jpg");
+        }
+
+        .cattext {
+            min-width: 180px;
+            background-color: rgb(55, 81, 107);
+            border-radius: 0px 0px 15px 15px;
+            color: white;
+            text-align: right;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 15px;
+            white-space: pre;
+            word-break: normal;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="page">
+
+    <div class="text text1"><h2>Cat</h2>
+
+        The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated
+        species in the family Felidae and often referred to as the domestic cat to distinguish
+        it from wild members of the family. The cat is either a house cat, kept as a pet, or a
+        feral cat, freely ranging and avoiding human contact.[5] A house cat is valued by humans
+        for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized
+        by various cat registries.
+    </div>
+
+
+    <div class="imagebox box1">
+        <div class="image image1"></div>
+        <div class="cattext">A Tabby cat in snowy weather</div>
+
+    </div>
+    <div class="imagebox box2">
+        <div class="image image2"></div>
+        <div class="cattext">The hooked papillae on a cat's tongue act
+            like a hairbrush to help clean and
+            detangle fur.
+        </div>
+    </div>
+
+
+    <div class="text text2"> Cats are similar in anatomy to the other felid species, with a strong
+        flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing
+        small prey. They are predators who are most active at dawn and dusk (crepuscular).
+        Cats can hear sounds too faint or too high in frequency for human ears, such as those
+        made by mice and other small animals. Compared to humans, they see better in the dark
+        (they see in near total darkness) and have a better sense of smell, but poorer color
+        vision. Cats, despite being solitary hunters, are a social species. Cat communication
+        includes the use of vocalizations including mewing, purring, trilling, hissing,
+        growling and grunting as well as cat-specific body language.[7] Cats also communicate
+        by secreting and perceiving pheromones.
+
+        Female domestic cats can have kittens from spring to late autumn, with litter sizes
+        ranging from two to five kittens. Domestic cats can be bred and shown as registered
+        pedigreed cats, a hobby known as cat fancy. Failure to control the breeding of pet
+        cats by spaying and neutering, as well as abandonment of pets, has resulted in large
+        numbers of feral cats worldwide, contributing to the extinction of entire bird
+        species, and evoking population control.
+
+
+        The hooked papillae on a cat's tongue act like a hairbrush to help clean and
+        detangle fur.
+    </div>
+
+
+</div>
+
+</body>
+</html>

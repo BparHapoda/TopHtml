@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .twobox {
+            display: flex;
+        }
+
+        .container {
+            width: 980px;
+            height: auto;
+            flex-direction: column;
+            display: flex;
+        }
+[class^='box']{border: 1px solid black}
+        .box1 {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box2 {
+            background: url("icons_hw/1.jpg") 50% 50%;
+            width: 50%;
+            height: 200px;
+            background-size: 100% 100%;
+            transition: background-size 1s ease;
+
+        }
+
+        .twobox:hover {
+            background-color: dimgrey;
+            opacity: 0.6;
+
+        }
+        .twobox:hover .box2{
+        background-size: 200% 200%;
+        background-image: url("icons_hw/1.jpg");
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="twobox">
+        <div class="box1">HELLO,WORLD!</div>
+        <div class="box2"></div>
+    </div>
+    <div class="twobox">
+        <div class="box2"></div>
+        <div class="box1">HELLO,WORLD!</div>
+    </div>
+</div>
+</body>
+</html>

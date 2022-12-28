@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task41</title>
+    <style>
+        .page {
+            min-width: 400px;
+            max-width: 800px;
+        }
+
+        @media (min-width: 600px) and (max-width: 1800px) {
+            .page {
+                width: 800px;
+                background-color: darkslategray;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                min-width: 700px;
+
+            }
+
+            .topblock {
+                max-width: 100%;
+                margin: 40px;
+
+                color: darkgrey;
+
+                font-size: medium;
+
+            }
+
+            .middleblock {
+                max-width: 100%;
+                line-height: 20px;
+                font-size: xx-large;
+                font-weight: bold;
+
+                white-space: break-spaces;
+                color: white;
+
+                margin-left: 40px;
+                max-width: 100%;
+            }
+
+            .text {
+                margin-top: -15px;
+            }
+
+            .bottomblock {
+                max-width: 100%;
+                display: flex;
+                flex-direction: row;
+
+                color: white;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-left: 40px;
+                vertical-align: center;
+            }
+
+            .punkt > div:first-child {
+                color: gray;
+            }
+
+            .punkt > div:nth-child(2) {
+                color: white;
+            }
+
+            .punkt {
+                margin-left: 25px;
+                margin-right: 15px;
+            }
+
+            .image {
+                width: 36px;
+                height: 36px;
+                background-image: url("icons/insta.png");
+                background-position: center;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 600px) {
+            .page {
+                max-widthwidth: 600px;
+                background-color: darkslategray;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                min-width: 400px;
+
+            }
+
+            .topblock {
+                max-width: 100%;
+                margin: 40px;
+                font-size: large;
+                color: darkgrey;
+
+
+            }
+
+            .middleblock {
+                max-width: 100%;
+                line-height: 15px;
+                font-size: xx-large;
+                font-weight: bold;
+                white-space: break-spaces;
+                color: white;
+                margin-left: 40px;
+
+            }
+
+            .text {
+                margin-top: -15px;
+            }
+
+            .bottomblock {
+                display: flex;
+                flex-wrap: wrap;
+                vertical-align: center;
+                justify-content: right;
+                color: white;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-left: 10px;
+                height: 80px;
+                max-width: 400px;
+
+            }
+
+            .punkt > div:first-child {
+                color: gray;
+            }
+
+            .punkt > div:nth-child(2) {
+                color: white;
+            }
+
+            .punkt {
+                margin-left: 15px;
+
+            }
+
+            .image {
+                width: 70px;
+                height: 70px;
+                background-image: url("icons/insta.png");
+                background-position: center;
+
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="page">
+    <div class="topblock">Home/Articles/</div>
+    <div class="middleblock">
+        <div class="text">The Difference Between</div>
+        <div class="text">Responsive and</div>
+        <div class="text">Adaptive Design</div>
+    </div>
+    <div class="bottomblock">
+        <div>
+            <div class="image"></div>
+        </div>
+
+        <div class="punkt">
+            <div> Author</div>
+            <div> Geoff Graham</div>
+        </div>
+        <div class="punkt">
+            <div> 49 Comments</div>
+            <div> Goto comments</div>
+        </div>
+        <div class="punkt">
+            <div> Published</div>
+            <div> Nov 11,2018</div>
+        </div>
+        <div class="punkt">
+            <div> Updated</div>
+            <div> Nov 17,2018</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

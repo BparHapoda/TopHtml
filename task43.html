@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task42</title>
+    <style>
+        div, p {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid gray;
+        }
+
+
+
+        ul .li_1::before {
+            background-image: url("icons_hw/incom.png");
+        }
+
+        ul .li_2::before {
+            background-image: url("icons_hw/outcom.png");
+        }
+
+        ul .li_3::before {
+            background-image: url("icons_hw/draft.png");
+        }
+
+        ul .li_4::before {
+            background-image: url("icons_hw/spam.png");
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li:hover {
+            background-color: rgb(244, 228, 228);
+        }
+
+        .rightmenuli:hover {
+            background-color: rgb(236, 236, 236)
+        }
+
+        ul .li_r1::before {
+            background-image: url("icons_hw/star1.svg")
+        }
+
+        ul .li_r2::before {
+            background-image: url("icons_hw/star2.svg")
+        }
+
+        .text1 {
+            color: rgb(79, 95, 121)
+        }
+
+@media screen and (min-width:800px ) {
+    .menu {
+
+        margin: 20px;
+    }
+    .page {
+        max-width: 1200px;
+        min-width: 800px;
+        background-color: rgb(245, 245, 245);
+    }
+    .menu {
+
+        margin: 5px;
+    }
+
+    hr {
+        max-width: 900px
+
+    }
+
+
+    .general {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+    .leftmenuli {
+        display: flex;
+        width: 125px;
+        height: 50px;
+
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+        font-size: small;
+    }
+
+
+    .leftmenuli::before {
+        content: ' ';
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 10px;
+
+    }
+
+
+    .logo {
+
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .logo.logo1 {
+        min-width: 95px;
+    }
+
+    .logo.logo2 {
+        min-width: 130px;
+        font-size: small;
+    }
+
+    .image {
+        height: 15px;
+
+    }
+
+    .imagenone {
+        height: 15px;
+        width: 15px;
+        background-size: cover;
+        background-color: rgb(245, 245, 245);
+
+    }
+
+    .rightmenuli {
+        background-color: rgb(245, 245, 245);
+        border-bottom: 1px solid gray;
+        height: 40px;
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .receive {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50px;
+    }
+
+    .theme {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    .rightmenuli::before {
+        content: ' ';
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+        display: inline-block;
+        margin-right: 10px;
+
+    }
+
+
+    image {
+
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+    }
+
+
+    .text2 {
+        color: rgb(158, 149, 145);
+        margin-left: 5px;
+    }
+
+    .text3 {
+        margin-left: 25px
+    }
+}
+
+        @media screen and (min-width:550px ) and (max-width: 799px) {
+            .menu {
+
+                margin: 10px;
+            }
+            .page {
+                max-width: 799px;
+                min-width: 550px;
+                background-color: rgb(245, 245, 245);
+            }
+
+            hr {
+                max-width: 799px
+            }
+
+
+            .general {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+
+
+            .leftmenuli {
+                display: flex;
+                width: 90px;
+                height: 50px;
+
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 5px;
+                font-size: small;
+            }
+
+
+            .leftmenuli::before {
+                content: ' ';
+                width: 30px;
+                height: 30px;
+                background-size: contain;
+                display: inline-block;
+                margin-right: 0px;
+
+            }
+
+
+            .logo {
+
+                justify-content: space-between;
+                margin-left: 15px;
+                margin-right: 15px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .logo.logo1 {
+                min-width: 95px;
+            }
+
+            .logo.logo2 {
+                min-width: 130px;
+                font-size: small;
+            }
+
+            .image {
+                height: 15px;
+
+            }
+
+            .imagenone {
+                height: 15px;
+                width: 15px;
+                background-size: cover;
+                background-color: rgb(245, 245, 245);
+
+            }
+
+            .rightmenuli {
+                background-color: rgb(245, 245, 245);
+                border-bottom: 1px solid gray;
+                height: 40px;
+                width: 600px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+
+            .receive {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                width: 30px;
+            }
+
+            .theme {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-left: 10px;
+                width: 280px;
+            }
+
+            .rightmenuli::before {
+                content: ' ';
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                display: inline-block;
+                margin-right: 3px;
+
+            }
+
+
+            image {
+
+                background-size: cover;
+                width: 15px;
+                height: 15px;
+            }
+
+
+            .text2 {
+                color: rgb(158, 149, 145);
+                margin-left: 5px;
+            }
+
+            .text3 {
+                margin-left: 5px
+            }
+        }
+
+
+        @media screen and (min-width:300px ) and (max-width: 549px) {
+            .menu {
+
+                margin: 10px;
+            }
+            .page {
+                max-width: 549px;
+                min-width: 300px;
+                background-color: rgb(245, 245, 245);
+            }
+
+            hr {
+                max-width: 549px
+            }
+
+
+            .general {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+
+
+            .leftmenuli {
+                display: flex;
+                flex-basis: 100%;
+                width: 50px;
+                height: 50px;
+
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 5px;
+                font-size: 0px;
+                color: rgb(245, 245, 245);
+
+            }
+
+
+            .leftmenuli::before {
+                content: ' ';
+                width: 30px;
+                height: 30px;
+                background-size: contain;
+                display: inline-block;
+                margin-right: 10px;
+
+            }
+
+
+            .logo {
+
+                justify-content: space-between;
+                margin-left: 15px;
+                margin-right: 15px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .logo.logo1 {
+                min-width: 95px;
+            }
+
+            .logo.logo2 {
+                min-width: 130px;
+                font-size: small;
+            }
+
+            .image {
+                height: 15px;
+
+            }
+
+            .imagenone {
+                height: 15px;
+                width: 15px;
+                background-size: cover;
+                background-color: rgb(245, 245, 245);
+
+            }
+
+            .rightmenuli {
+                background-color: rgb(245, 245, 245);
+                border-bottom: 1px solid gray;
+                height: 40px;
+                width: 600px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+
+            .receive {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                width: 30px;
+            }
+
+            .theme {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-left: 10px;
+                width: 280px;
+            }
+
+            .rightmenuli::before {
+                content: ' ';
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                display: inline-block;
+                margin-right: 3px;
+
+            }
+
+
+            image {
+
+                background-size: cover;
+                width: 15px;
+                height: 15px;
+            }
+
+
+            .text2 {
+                color: rgb(158, 149, 145);
+                margin-left: 5px;
+            }
+
+            .text3 {
+                margin-left: 5px
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="footer">
+        <div class="logo logo1"><img class="image" src="icons_hw/mail.png" alt="">MY MAIL</div>
+        <div class="logo logo2">
+            user@mymail.com <img class="image" src="icons_hw/account.png" alt=""></div>
+    </div>
+    <div class="general">
+
+        <div class="menu">
+            <ul>
+                <li class="leftmenuli li_1">Incoming</li>
+                <li class="leftmenuli  li_2">Outgoing</li>
+                <li class="leftmenuli  li_3">Drafts</li>
+                <li class="leftmenuli  li_4">Spam</li>
+            </ul>
+        </div>
+
+
+        <div class="menu">
+            <ul>
+                <li class="rightmenuli li_r1">
+                    <div class="receive">
+                        <div>me,</div>
+                        <div>ALex</div>
+
+                    </div>
+                    <div class="theme">
+                        <div class="text1">Trip to South Africa</div>
+                        <div class="text2">Suspendisse ut sapien non arcu rutrumt...</div>
+                    </div>
+                    <div><img class="image" src="icons_hw/attach_26.png" alt=""></div>
+                    <div class="text3"> 12 apr.</div>
+
+                </li>
+                <li class="rightmenuli li_r2">
+
+                    <div class="receive">
+                        <div>me,</div>
+                        <div>John</div>
+
+                    </div>
+                    <div class="theme">
+                        <div class="text1">Santa Monica Trip</div>
+                        <div class="text2">Crass acumsan lacus urna uktricies</div>
+                    </div>
+                    <div><img class="imagenone"></div>
+                    <div class="text3"> 11 apr.</div>
+
+                </li>
+
+                <li class="rightmenuli li_r1">
+                    <div class="receive">
+                        <div>me,</div>
+                        <div>ALex</div>
+
+                    </div>
+                    <div class="theme">
+                        <div class="text2">Trip to South Africa</div>
+                        <div class="text2">Suspendisse ut sapien non arcu rutrumt...</div>
+                    </div>
+                    <div><img class="image" src="icons_hw/attach_26.png" alt=""></div>
+                    <div class="text3"> 12 apr.</div>
+
+                </li>
+
+                <li class="rightmenuli li_r1">
+                    <div class="receive">
+                        <div>me,</div>
+                        <div>ALex</div>
+
+                    </div>
+                    <div class="theme">
+                        <div class="text1">Trip to South Africa</div>
+                        <div class="text2">Suspendisse ut sapien non arcu rutrumt...</div>
+                    </div>
+                    <div><img class="image" src="icons_hw/attach_26.png" alt=""></div>
+                    <div class="text3"> 12 apr.</div>
+
+                </li>
+
+
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+</html>
