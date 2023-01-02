@@ -42,11 +42,12 @@
             appearance: none;
         }
 
-       label>input[type=checkbox] {
-           position: relative;
-           display: inline-block;
-           margin-right: -25px;
-       }
+        label > input[type=checkbox] {
+            position: relative;
+            display: inline-block;
+            margin-right: -25px;
+        }
+
         label > input[type=checkbox]::before {
             content: "";
             display: inline-block;
@@ -57,7 +58,7 @@
             border-radius: 10px;
             position: relative;
             top: 1px;
-transition: all 500ms ease-in-out;
+            transition: all 500ms ease-in-out;
 
         }
 
@@ -75,91 +76,108 @@ transition: all 500ms ease-in-out;
         }
 
         label input[type=checkbox]:checked {
-transform: rotateZ(180deg);right: 30px;bottom: 1px;
+            transform: rotateZ(180deg);
+            right: 30px;
+            bottom: 1px;
         }
-        label input[type=checkbox]:checked::after{
+
+        label input[type=checkbox]:checked::after {
             background-color: forestgreen;
         }
-        label input[type=checkbox]:checked::before{
+
+        label input[type=checkbox]:checked::before {
             border-color: forestgreen;
         }
 
-        input[type=radio]{
+        input[type=radio] {
             z-index: -1;
             appearance: none;
 
         }
-        label > input[type=radio]::before{
-           content: "";
+
+        label > input[type=radio]::before {
+            content: "";
             border: 1px solid green;
             width: 20px;
             height: 20px;
             display: inline-block;
             position: relative;
-            top:2px;
+            top: 2px;
             border-radius: 20px 20px;
         }
-label > input[type=radio]::after{
-    content: "";
-    border-radius: 14px 14px;
-    width: 14px;
-    height: 14px;
-    background-color: green;
-    display: inline-block;
-    position: relative;
-    right: 17px;
-    bottom: 1px;
-    visibility: hidden;
-}
-label input[type=radio]:checked::after{
-    visibility: visible;
-}
-button {
 
-    height: 45px;width: 105px;
-    border-radius: 10px;
-    border: none;
-   background-color: rgb(65,173,73);
-    color: white;
-    font-weight: bold;
-    font-size: medium;
-}
-button:hover{background-color: rgb(44,119,49);}
-
-button[class=danger]{
-    background-color: rgb(228,64,97);
-}
-        button[class=danger]:hover{
-            background-color: rgb(151,41,63);
+        label > input[type=radio]::after {
+            content: "";
+            border-radius: 14px 14px;
+            width: 14px;
+            height: 14px;
+            background-color: green;
+            display: inline-block;
+            position: relative;
+            right: 17px;
+            bottom: 1px;
+            visibility: hidden;
         }
 
-        button[class=circle]{
-            height: 45px;width: 45px;
-            border-radius: 45px;
-            border: none;
-            background-color: rgb(65,173,73);
+        label input[type=radio]:checked::after {
+            visibility: visible;
         }
-        button[class="circle danger"]{
-            height: 45px;width: 45px;
+
+        button {
+
+            height: 45px;
+            width: 105px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(65, 173, 73);
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        button:hover {
+            background-color: rgb(44, 119, 49);
+        }
+
+        button[class=danger] {
+            background-color: rgb(228, 64, 97);
+        }
+
+        button[class=danger]:hover {
+            background-color: rgb(151, 41, 63);
+        }
+
+        button[class=circle] {
+            height: 45px;
+            width: 45px;
             border-radius: 45px;
             border: none;
-            background-color: rgb(228,64,97);
+            background-color: rgb(65, 173, 73);
+        }
+
+        button[class="circle danger"] {
+            height: 45px;
+            width: 45px;
+            border-radius: 45px;
+            border: none;
+            background-color: rgb(228, 64, 97);
         }
 
         button:disabled {
-            background-color: rgb(128,128,128);
+            background-color: rgb(128, 128, 128);
             border: 1px solid lightgray;
             color: white;
         }
+
         textarea {
             width: 550px;
             height: 100px;
-            color: rgb(204,213,222);
+            color: rgb(204, 213, 222);
             margin-left: 30px;
-            padding:15px;
+            padding: 15px;
 
             border-radius: 5px;
-            border: 2px solid rgb(245,245,245);
+            border: 2px solid rgb(245, 245, 245);
         }
 
     </style>

@@ -3,8 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style>
+        @media (max-width: 600px){
+            .container{max-width: 300px}
+            .first,.second,.third,.fourth {
+                max-width: 300px;
+
+            }
+        }
+        @media (min-width:600px){
+            .container{max-width: 800px}
+            .first,.second,.third,.fourth {
+                max-width: 800px;
+            }
+            .username{max-width: 100%}
+            .email{max-width: 100%}
+            .password{width: 40%}
+            .password1{width: 40%}
+        }
+        @media (min-width: 900px){
+            .container{width: 100%}
+            .first{width: 400px}
+            .second{width: 400px}
+            .third{width: 100%}
+            .fourth{
+                width:100%;}
+            .username{width: 100%}
+            .email{width: 100%}
+            .password{width: 30%}
+            .password1{width: 30%}
+        }
+.fourth{display:flex;
+flex-direction: column;justify-content: flex-end;
+    width: 100%;
+}
+        .third{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: gray;
+            padding: 25px;
+            box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+        }
+
+
+        .ulh {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        hli {
+            height: 15px;
+            border-bottom: 1px solid darkgrey;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            margin:5px 25px 5px 25px;
+        }
+
+
+        input {
+            border: 0px;
+            width: 100%;
+            outline: none
+        }
+
+        h2 {
+            font-weight: lighter;
+            color: black
+        }
+
+        input[type=date] {
+            font-weight: bold;
+        }
+
+        div[class=third] > ulh > hli {
+            font-weight: bold;
+            color: black;
+            margin: 0px;
+            padding: 0px;
+            border: none;
+        }
+
+        .check {
+            font-size: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        input {
+            margin: 0px;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            background-color: teal;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            float: right;
+        }
+
+        button:hover {
+            background-color: darkslategray
+        }
+
+
+        .email::before {
+            background: url("icons6/email.png");
+            background-size: cover;
+            content: '';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            left: -30px;
+            top: 5px;
+        }
+
+        .password::before {
+            background-image: url("icons6/pswd.png");
+            background-size: cover;
+            content: '';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            left: -30px;
+            top: 5px;
+        }
+
+        .username::before {
+            background-image: url("icons6/username.png");
+            background-size: cover;
+            content: '';
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            left: -30px;
+            top: 5px;
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <div class="first">
+        <h2>Registration form</h2>
+        <div class="ulh">
+            <hli class="username">
+                <input type="text" placeholder="Username"></hli>
+            <hli class="email"><input type="text" placeholder="Email address"></hli>
+            <hli class="password"><input type="password" placeholder="Password"></hli>
+            <hli class="password1"><input type="password" placeholder="Confirm password"></label></hli>
+        </div>
+    </div>
+
+    <div class="second">
+        <h2>Personal details</h2>
+        <div class="ulh">
+            <hli class="password1">
+                <input type="text" placeholder="First name"></hli>
+            <hli class="password1"><input type="text" placeholder="Second name"></hli>
+            <hli class="password1"><input type="pol" list="pol" placeholder="Male"/>
+                <datalist id="pol">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </datalist>
+            </hli>
+            <hli class="password1"><input type="date" placeholder="mm/dd/yyyy"></hli>
+        </div>
+    </div>
+    <div class="third">
+
+
+                <div class="check">
+                    <div><input type="checkbox"></div>
+                    <div>I want to receive the news and special offers</div>
+                </div>
+
+
+
+                <div class="check">
+                    <div><input type="checkbox"></div>
+                    <div>I agree with the Terms and Conditions</div>
+                </div>
+
+    </div>
+    <div class="fourth">
+        <div>
+            <hr>
+        </div>
+        <div>
+            <button> SUBMIT</button>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
