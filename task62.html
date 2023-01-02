@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        input[type=text] {
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        input[type=text]:disabled {
+            border: 1px solid lightgray;
+            color: lightgray;
+        }
+
+        input[type=text][value="valid text"] {
+            border: 1px solid forestgreen;
+            color: forestgreen;
+            background: url(icons6/valid.png) no-repeat;
+            background-size: 25px;
+            background-position: right;
+
+        }
+
+        input[type=text][value="invalid text"] {
+            border: 1px solid red;
+            color: red;
+            background: url(icons6/invalid.png) no-repeat;
+            background-size: 25px;
+            background-position: right;
+
+        }
+
+        input[type=checkbox] {
+            z-index: -1;
+            appearance: none;
+        }
+
+       label>input[type=checkbox] {
+           position: relative;
+           display: inline-block;
+           margin-right: -25px;
+       }
+        label > input[type=checkbox]::before {
+            content: "";
+            display: inline-block;
+            width: 70px;
+            height: 15px;
+            border: 1px solid red;
+            margin: 0;
+            border-radius: 10px;
+            position: relative;
+            top: 1px;
+transition: all 500ms ease-in-out;
+
+        }
+
+        label > input[type=checkbox]::after {
+            content: "";
+            display: inline-block;
+            background-color: red;
+            width: 30px;
+            height: 10px;
+            right: 34px;
+            bottom: 2px;
+            position: relative;
+            border-radius: 5px;
+
+        }
+
+        label input[type=checkbox]:checked {
+transform: rotateZ(180deg);right: 30px;bottom: 1px;
+        }
+        label input[type=checkbox]:checked::after{
+            background-color: forestgreen;
+        }
+        label input[type=checkbox]:checked::before{
+            border-color: forestgreen;
+        }
+
+        input[type=radio]{
+            z-index: -1;
+            appearance: none;
+
+        }
+        label > input[type=radio]::before{
+           content: "";
+            border: 1px solid green;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            top:2px;
+            border-radius: 20px 20px;
+        }
+label > input[type=radio]::after{
+    content: "";
+    border-radius: 14px 14px;
+    width: 14px;
+    height: 14px;
+    background-color: green;
+    display: inline-block;
+    position: relative;
+    right: 17px;
+    bottom: 1px;
+    visibility: hidden;
+}
+label input[type=radio]:checked::after{
+    visibility: visible;
+}
+button {
+
+    height: 45px;width: 105px;
+    border-radius: 10px;
+    border: none;
+   background-color: rgb(65,173,73);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+button:hover{background-color: rgb(44,119,49);}
+
+button[class=danger]{
+    background-color: rgb(228,64,97);
+}
+        button[class=danger]:hover{
+            background-color: rgb(151,41,63);
+        }
+
+        button[class=circle]{
+            height: 45px;width: 45px;
+            border-radius: 45px;
+            border: none;
+            background-color: rgb(65,173,73);
+        }
+        button[class="circle danger"]{
+            height: 45px;width: 45px;
+            border-radius: 45px;
+            border: none;
+            background-color: rgb(228,64,97);
+        }
+
+        button:disabled {
+            background-color: rgb(128,128,128);
+            border: 1px solid lightgray;
+            color: white;
+        }
+        textarea {
+            width: 550px;
+            height: 100px;
+            color: rgb(204,213,222);
+            margin-left: 30px;
+            padding:15px;
+
+            border-radius: 5px;
+            border: 2px solid rgb(245,245,245);
+        }
+
+    </style>
+</head>
+<body>
+<h3>Inputs</h3>
+<input type="text" placeholder="Enter some text" disabled>
+<input type="text" value="valid text">
+<input type="text" value="invalid text" pattern="\d">
+<h3>Check boxes</h3>
+<label>
+    <input type="checkbox"> Subscribe
+</label>
+<label>
+    <input type="checkbox" checked> Subscribe
+</label>
+<h3>Raddio Buttons</h3>
+<label>Gender:</label>
+<label><input type="radio" name="gender" checked>Male</label>
+<label><input type="radio" name="gender">Female</label>
+<h3>Buttons</h3>
+<button>Active</button>
+<button class="danger">Danger</button>
+<button disabled>Disabled</button>
+<button class="circle">+</button>
+<button class="circle danger">-</button>
+<h3>Text area</h3>
+<textarea placeholder="Enter some text..."></textarea>
+</body>
+</html>

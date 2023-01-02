@@ -3,8 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style>
+        .container {
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            background-color: rgb(159, 205, 205);
+            overflow: hidden;
+            border-radius: 15px;
+            left: 200px;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: rgb(120, 147, 142);
+
+        }
+
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 0.5px solid;
+            border-bottom-color: darkslategray;
+            padding-left: 10px;
+        }
+
+        .uptext {
+            color: white;
+            background-color: rgb(219, 100, 35);
+
+            position: absolute;
+            right: 820px;
+            top: 130px;
+            width: 300px;
+            height: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        img {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            bottom: 200px;
+            left: 420px;
+        }
+
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-around;
+        }
+
+        [id^=punkt] {
+            height: 30px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: rgb(169, 210, 210);
+
+        }
+
+        #punkt4 {
+            margin-left: 10px;
+            width: 80%;
+        }
+
+        #punkt5 {
+            margin-left: 10px;
+            width: 80%;
+        }
+
+        #punkt3 {
+            margin-left: 10px;
+            width: 80%;
+        }
+
+        #punkt1 {
+            width: 100%;
+
+
+        }
+
+        #punkt2 {
+            width: 100%;
+
+        }
+        :focus{
+            outline: none;}
+        .text {
+            background-color: rgb(169, 210, 210)
+        }
+
+        .creditcard {
+            margin-left: 20px;
+            display: flex;
+            padding: 0px;
+            box-sizing: border-box;
+            flex-direction: column;
+            width: 70%;
+
+        }
+    </style>
+
 </head>
 <body>
+<div class="container">
+    <p>
+    </p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="creditcard">
+        <div class="text">Card Number</div>
+        <div>
+            <form>
+                <input id="punkt1" type="text" placeholder="1234 5678 9012 3456">
 
+            </form>
+        </div>
+        <div class="text">Name on Card</div>
+        <div>
+            <form>
+                <input id=punkt2 type="text" placeholder="Name Surname">
+            </form>
+        </div>
+        <div class="bottom">
+            <div>Expiry Date</div>
+            <div></div>
+            <div>CVV/CVN</div>
+        </div>
+        <div class="bottom">
+
+            <form>
+                <input id="punkt3" type="text" placeholder="02">
+            </form>
+
+
+            <form>
+                <input id="punkt4" type="text" placeholder="2017">
+            </form>
+
+
+            <form>
+                <input id="punkt5" type="password">
+            </form>
+
+        </div>
+    </div>
+    <img src="icons6/moon_flag.png" alt="">
+</div>
+<div class="uptext">Credit card details</div>
 </body>
 </html>
