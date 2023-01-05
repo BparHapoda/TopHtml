@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container {
+            width: 1280px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 150px 290px 150px;
+
+        }
+
+        .user1info {
+            display: flex;
+            flex-direction: column;
+            grid-column-start: 1;
+        }
+
+        .user2info {
+            display: flex;
+            flex-direction: column;
+            grid-column-start: 3;
+        }
+
+        .username {
+            font-size: small;
+        }
+
+        .time {
+            color: gray;
+            font-size: xx-small;
+        }
+
+
+        .user1text {
+            font-size: small;
+            padding: 10px;
+            color: rgb(47, 22, 26);
+            background-color: rgb(255, 182, 193);
+            border-radius: 10px 10px 10px 0px;
+            grid-column-start: 2;
+            min-height: 15px;
+        }
+
+        .user2text {
+            font-size: small;
+            padding: 10px;
+            color: rgb(47, 22, 26);
+            background-color: rgb(173, 216, 230);
+            grid-column-start: 2;
+            border-radius: 10px 10px 0px 10px;
+            min-height: 15px;
+        }
+
+        .usericon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="grid">
+
+
+        <div class="usericon">
+            <div>
+                <img src="icons6/avatar_2.png" class="user1icon">
+            </div>
+            <div class="user1info">
+                <div class="username">Annie Smith</div>
+                <div class="time">4 hours ago</div>
+            </div>
+        </div>
+        <div class="user1text">Ut in enim scekerisque,pharetra vekit id, maximus nunc</div>
+
+
+        <div class="user2text">Furce auctor nibh at consequal efficitur</div>
+
+
+        <div class="usericon">
+
+            <div class="user2info">
+                <div class="username">Jack Silverstone</div>
+                <div class="time">4 hours ago</div>
+            </div>
+            <div>
+                <img src="icons6/avatar_1.png" class="user2icon">
+            </div>
+
+        </div>
+
+        <div class="usericon">
+            <div>
+                <img src="icons6/avatar_2.png" class="user1icon">
+            </div>
+            <div class="user1info">
+                <div class="username">Annie Smith</div>
+                <div class="time">4 hours ago</div>
+            </div>
+        </div>
+        <div class="user1text">Etiam lacinia velit id venenatis sodales</div>
+
+
+        <div class="user2text">Mauris ac mi quis ante dignissim tempus in non nulla</div>
+
+
+        <div class="usericon">
+
+            <div class="user2info">
+                <div class="username">Jack Silverstone</div>
+                <div class="time">4 hours ago</div>
+            </div>
+            <div>
+                <img src="icons6/avatar_1.png" class="user2icon">
+            </div>
+
+        </div>
+
+        <div class="usericon">
+            <div>
+                <img src="icons6/avatar_2.png" class="user1icon">
+            </div>
+            <div class="user1info">
+                <div class="username">Annie Smith</div>
+                <div class="time">4 hours ago</div>
+            </div>
+        </div>
+        <div class="user1text">Fusce quis ex fringilla, conque diam vel, sodales tortor</div>
+
+
+        <div class="user2text">Curabitur quis dolor eget elit pulvinar sollicitudin</div>
+
+
+        <div class="usericon">
+
+            <div class="user2info">
+                <div class="username">Jack Silverstone</div>
+                <div class="time">4 hours ago</div>
+            </div>
+            <div>
+                <img src="icons6/avatar_1.png" class="user2icon">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

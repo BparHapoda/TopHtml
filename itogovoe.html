@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>last task</title>
+    <style>
+        .container {
+            min-weight: 800px;
+            background-color: rgb(245, 245, 245);
+
+        }
+
+        .footer {
+            border-bottom: gray;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .footerpart1 {
+            min-width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            margin-left: 30px;
+        }
+
+        .footerpart2 {
+            min-width: 20%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: row;
+            margin-right: 20px;
+        }
+
+        .img1footer {
+            width: 20px;
+            height: 20px;
+            background: url("icons_hw/account.png");
+            background-size: cover;
+            margin-right: 20px;
+
+        }
+
+        .img2footer {
+            background: url("icons_hw/account.png");
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            margin-left: 20px;
+        }
+
+        .bodyletter {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+        }
+
+        .menu {
+
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 60px;
+
+        }
+
+        .item {
+            width: 150px;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(245, 245, 245);
+        }
+
+        .itemicon {
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .itemtext {
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+            align-items: center;
+
+        }
+
+        .item:hover {
+            background-color: rgb(244, 228, 228);
+        }
+
+        .letters {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid gray;
+            width: auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 12px;
+            padding-left: 5px;;
+        }
+
+        .info {
+            display: flex;
+            width: auto;
+            flex-grow: 1;
+            justify-content: flex-start;
+        }
+
+
+        .rowpart1 {
+            display: table;
+            width: 100px;
+
+        }
+
+        .rowpart2 {
+            display: table;
+            width: 150px;
+
+        }
+
+        .rowpart3 {
+            display: table;
+            color: darkgrey;
+            margin-left: 50px;
+
+        }
+
+        .rowpart4 {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            flex-grow: 0;
+            flex-wrap: nowrap;
+            margin-right: 20px;
+
+        }
+
+        .attach {
+            display: flex;
+            background: url("icons_hw/attach_26.png");
+            width: 15px;
+            height: 15px;
+            background-size: cover;
+            justify-content: center;
+
+            flex-grow: 0;
+            margin-right: 5px;
+        }
+
+        .star1 {
+            background: url("icons_hw/star1.svg");
+            display: flex;
+            width: 15px;
+            height: 15px;
+            background-size: cover;
+            justify-content: center;
+
+            flex-grow: 0;
+            margin-right: 50px;
+        }
+
+        .star2 {
+            background: url("icons_hw/star2.svg");
+            display: flex;
+            width: 15px;
+            height: 15px;
+            background-size: cover;
+            justify-content: center;
+
+            flex-grow: 0;
+            margin-right: 50px;
+        }
+
+        .row:hover {
+            background-color: rgb(236, 236, 236)
+        }
+
+        @media screen and (max-width: 800px) and (min-width: 550px) {
+
+
+            .info {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-left: 0px;
+            }
+
+            .rowpart2 {
+                margin-left: 0px;
+            }
+
+            .rowpart3 {
+                margin-left: 0px;
+            }
+
+            .attach {
+                margin-right: 30px;
+            }
+
+            .star1 {
+                margin-right: 10px
+            }
+
+            .star2 {
+                margin-right: 10px
+            }
+        }
+
+        @media screen and (max-width: 550px) and (min-width: 300px) {
+
+            .info {
+                flex-direction: column;
+
+
+            }
+
+            .rowpart2 {
+                margin-left: 0px;
+            }
+
+            .rowpart3 {
+                margin-left: 0px;
+            }
+
+
+            .menu {
+                width: 50px;
+            }
+
+            .itemtext {
+                display: none;
+            }
+
+            .item {
+                width: 55px;
+            }
+
+            .star1 {
+                margin-right: 10px
+            }
+
+            .star2 {
+                margin-right: 10px
+            }
+        }
+
+        .menu {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        @media screen and (min-width: 800px ) {
+            .rowpart3::before {
+                content: "\002D";
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="footer">
+        <div class="footerpart1">
+            <div class="img1footer">
+            </div>
+            MY MAIL
+        </div>
+
+        <div class="footerpart2">
+            user@mymail.com
+            <div class="img2footer">
+            </div>
+        </div>
+
+    </div>
+    <div class="bodyletter">
+        <div class="menu">
+            <div class="item">
+                <div class="itemicon"><img src="icons_hw/incom.png" width="25px" height="25px"></div>
+                <div class="itemtext">Incoming</div>
+            </div>
+            <div class="item">
+                <div class="itemicon"><img src="icons_hw/outcom.png" width="25px" height="25px"></div>
+                <div class="itemtext">Outgoing</div>
+            </div>
+            <div class="item">
+                <div class="itemicon"><img src="icons_hw/draft.png" width="25px" height="25px"></div>
+                <div class="itemtext">Drafts</div>
+            </div>
+            <div class="item">
+                <div class="itemicon"><img src="icons_hw/spam.png" width="25px" height="25px"></div>
+                <div class="itemtext">Spam</div>
+            </div>
+
+
+        </div>
+
+        <div class="letters">
+
+            <div class="row">
+
+                <div class="star1"></div>
+
+                <div class="info">
+                    <div class="rowpart1">me,Alex</div>
+                    <div class="rowpart2">Trip to South Africa</div>
+                    <div class="rowpart3"> Suspendicce ut sapien un arcu rutrum t...</div>
+                </div>
+
+                <div class="rowpart4">
+                    <div class="attach"></div>
+                    <div class="date">12 apr.</div>
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="star1"></div>
+
+                <div class="info">
+                    <div class="rowpart1">me,John</div>
+                    <div class="rowpart2">Santa Monica Trip</div>
+                    <div class="rowpart3"> Cras accumsan lacus quis urna ultricies,vel fi...</div>
+                </div>
+
+                <div class="rowpart4">
+                    <div class="attach"></div>
+                    <div class="date">12 apr.</div>
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="star1"></div>
+
+                <div class="info">
+                    <div class="rowpart1">me,John,ALex</div>
+                    <div class="rowpart2">Birthday party</div>
+                    <div class="rowpart3">20.04.2019</div>
+                </div>
+
+                <div class="rowpart4">
+                    <div class="attach"></div>
+                    <div class="date">11 apr.</div>
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="star2"></div>
+
+                <div class="info">
+                    <div class="rowpart1">me,John</div>
+                    <div class="rowpart2">Santa Monica Trip</div>
+                    <div class="rowpart3"> - Cras accumsan lacus quis urna ultricies,vel fi...</div>
+                </div>
+
+                <div class="rowpart4">
+                    <div class="attach"></div>
+                    <div class="date">12 apr.</div>
+                </div>
+
+
+            </div>
+            <div class="row">
+
+                <div class="star1"></div>
+
+                <div class="info">
+                    <div class="rowpart1">me,John</div>
+                    <div class="rowpart2">Santa Monica Trip</div>
+                    <div class="rowpart3"> - Cras accumsan lacus quis urna ultricies,vel fi...</div>
+                </div>
+
+                <div class="rowpart4">
+                    <div class="attach"></div>
+                    <div class="date">12 apr.</div>
+                </div>
+
+
+            </div>
+            <div class="row">
+
+                <div class="star1"></div>
+
+                <div class="info">
+                    <div class="rowpart1">me,John</div>
+                    <div class="rowpart2">Santa Monica Trip</div>
+                    <div class="rowpart3"> - Cras accumsan lacus quis urna ultricies,vel fi...</div>
+                </div>
+
+                <div class="rowpart4">
+                    <div class="attach"></div>
+                    <div class="date">12 apr.</div>
+                </div>
+
+
+            </div>
+            <div class="row">
+
+                <div class="star2"></div>
+
+                <div class="info">
+                    <div class="rowpart1">me,John</div>
+                    <div class="rowpart2">Santa Monica Trip</div>
+                    <div class="rowpart3"> - Cras accumsan lacus quis urna ultricies,vel fi...</div>
+                </div>
+
+                <div class="rowpart4">
+                    <div class="attach"></div>
+                    <div class="date">12 apr.</div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
